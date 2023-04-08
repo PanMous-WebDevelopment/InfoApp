@@ -1,0 +1,32 @@
+﻿@model InfoApp.Models.Info
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="InfoTitle" class="control-label"></label>
+                <input asp-for="InfoTitle" class="form-control" />
+                <span asp-validation-for="InfoTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InfoAnswer" class="control-label"></label>
+                <input asp-for="InfoAnswer" class="form-control" />
+                <span asp-validation-for="InfoAnswer" class="text-danger"></span>
+            </div>
+            <div style="display: inline-block; margin-top:10px;">
+                <input type="submit" value="Create" class="btn btn-outline-success"/>
+                <a asp-action="Index" class="btn btn-outline-primary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<InfoApp.Models.Info>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align: center;">Info Library</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary" style="text-decoration: none;">Create New</a>
+</p>
+
+
+
+<table class="table" style="border: none;">
+    <thead style="border: none;">
+        <tr style="border: none;">
+            <th style="border: none">
+                @Html.DisplayNameFor(model => model.InfoTitle)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="border: none;">
+                    @Html.DisplayFor(modelItem => item.InfoTitle)
+                </td>
+                <td style="border: none;">
+                    <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-outline-info" style="text-decoration: none;">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-outline-success" style="text-decoration: none;">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-outline-danger " style="text-decoration: none;">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
