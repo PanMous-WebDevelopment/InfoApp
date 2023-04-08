@@ -7,3 +7,6 @@ An online library made with ASP.NET Core MVC. The user can browse a list of vari
 ![Screenshot_46](https://user-images.githubusercontent.com/129271569/230714792-9e08145f-25dc-491d-98e6-c9c6c484f801.png)
 
 ![Screenshot_47](https://user-images.githubusercontent.com/129271569/230714814-7a63a68e-398d-45a8-8365-5f14d915c7d6.png)
+
+![Screenshot_48](https://user-images.githubusercontent.com/129271569/230714849-c0c88532-2aa2-4f15-8a75-c42436e27726.png)
+
